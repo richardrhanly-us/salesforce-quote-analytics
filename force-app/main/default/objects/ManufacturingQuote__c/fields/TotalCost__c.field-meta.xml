@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TotalCost__c</fullName>
+    <description>Calculated total of material and labor costs for the manufacturing quote.</description>
+    <formula>BLANKVALUE(MaterialCost__c, 0) + BLANKVALUE(LaborCost__c, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Automatically calculated from Material Cost plus Labor Cost.</inlineHelpText>
+    <label>Total Cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <securityClassification>Confidential</securityClassification>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>
